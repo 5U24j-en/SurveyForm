@@ -1,0 +1,52 @@
+<!DOCTYPE.html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survery Form</title>
+    <link rel="stylesheet" href="SurveyForm.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please enter the required details for educational purpose</p>
+    <form id="survey-form">
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label id="name-label"> Enter you Name: <input id="name" type="text" placeholder="John" value="John" required></label>
+      
+      <label id="email-label"> Enter you Email Address: <input id="email" type="email" placeholder="John@gmail.com" value="John@gmail.com" required></label>
+
+      <label id="number-label">Enter you Age: <input id="number" type="number" min="13" max="120" placeholder="24" value="24" required></label>
+
+    <label for="dropdown">Education 
+    <select id="dropdown">
+      <option value="1">(Select any one)</option>
+      <option value="2">School</option>
+      <option value="3">College</option>
+    </label>
+    </select>
+    <p>Select your Gender</p>
+    <label for="Male"><input id="Male" type="radio" name="Gender" class="inline" checked value="male" />Male</lable>
+    <label for="Female"><input id="Female" type="radio" name="Gender" class="inline" value="female" />Female</label>
+    </fieldset>
+    <fieldset>
+    <legend>Courses</legend>
+    <p>Select the courses you are intrested in</p>
+    <label for="Maths" >
+      <input id="Maths" type="checkbox" name="Maths" value="Maths"/> Advanced Mathematics</label><br>
+    <label for="Chem" >
+    <input id="Chem" type="checkbox" name="Chem" value="Chem" /> Advanced Chemistry</label><br>
+    <label for="Biology" >
+    <input id="Biolohy" type="checkbox" name="Biology" value="Biology" /> Biology</label><br>
+    <label for="CS" >
+    <input id="CS" type="checkbox" name="CS" value="CS" /> High Level Programming</label><br>
+    <label for="Econ" >
+    <input id="Econ" type="checkbox" name="Econ" value="Econ"/> Economics</label><br>  
+    </fieldset>
+    <fieldset>
+      <legend>Additional Details</legend>
+      <label for="bio">What are your expectations: <textarea id="bio" name="bio" rows="5" cols="30" placeholder="I am looking for ..."></textarea></label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
